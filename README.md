@@ -16,4 +16,4 @@
 👩🏻‍💻  María Fernanda García Ruiz - C.I. 30.719.478 - Usuario de Github: <a href="https://github.com/Maferr30" rel="nofollow">Maferr30</a>
 
 <h2>⚠️  Advertencia</h2>
-<p style="text-align: justify;">Este proyecto es meramente educativo, la utilización de imagenes, logos y el propio sistemas de notas "Sigea" como base, <strong>no nos pertenecen<strong>, esto es simplemente un Proyecto/Actividad para la elaboración de un nuevo sistema. 
+<p style="text-align: justify;">Este proyecto es meramente educativo, la utilización de imagenes, logos y el propio sistemas de notas "Sigea" como base de inspiración, <strong>no nos pertenecen<strong>, esto es simplemente un Proyecto/Actividad para la elaboración de un nuevo sistema. 
