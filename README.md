@@ -1,5 +1,5 @@
 <div align="center" dir="auto">
-<img alt="Imagen de Logo IUJO" src="https://aulaccs.iujoac.org.ve/pluginfile.php/2/course/section/24/IUJO.gif" width="500" style="background-color: white;">
+<img alt="Imagen de Logo IUJO" src="https://aulaccs.iujoac.org.ve/pluginfile.php/2/course/section/24/IUJO.gif" width="500" background-color: white;>
 <h1>🏫  Sigea 2.0</h1>
 <p>Nuevo Sistema de Notas Basado en Sigea (IUJO-Catia)</p>
 
