@@ -4,7 +4,7 @@
 <p>Nuevo Sistema de Notas Basado en Sigea (IUJO-Catia)</p>
 
 <h2>🔎  Introducción</h2>
-<p style="text-align: justify;">Un saludo, presentamos <strong>Sigea 2.0.<strong> Este proyecto nace bajo el objetivo de la creación de un nuevo sistema de notas <strong>(desde la perspectiva del docente)<strong>, tomando como principal base el sistema de notas actual del <strong>"Instituto Universitario Jesús Obrero", sede Catía (IUJO-Catía).<strong> Buscamos mejorar el diseño y funcionabilidad con respecto al sistema actual. Este proyecto se presenta para la unidad curricular de <strong>Algoritmo y Programación 2<storng>, dada por el <strong>Profesor Reynaldo González.<strong></p>
+<p style="text-align: justify;">Un saludo, presentamos <strong>Sigea 2.0.</strong> Este proyecto nace bajo el objetivo de la creación de un nuevo sistema de notas <strong>(desde la perspectiva del docente)</strong>, tomando como principal base el sistema de notas actual del <strong>"Instituto Universitario Jesús Obrero", sede Catía (IUJO-Catía).</strong> Buscamos mejorar el diseño y funcionabilidad con respecto al sistema actual. Este proyecto se presenta para la unidad curricular de <strong>Algoritmo y Programación 2</storng>, dada por el <strong>Profesor Reynaldo González.</strong></p>
 
 
 <h2>👥  Integrantes</h2>
