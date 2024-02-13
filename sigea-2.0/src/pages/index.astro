@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/Layout.astro";
+// import Header from "../components/Header.astro"
+import Nav from "../components/Nav.astro"
+import Button from "../components/Button.astro"
+---
+
+<Layout title="Sigea 2.0">
+  <main> 
+
+    <!-- Header Titulo Sigea 2.0 -->
+    <!-- <Header/> -->
+
+    <!-- Barra de Navegación -->
+    <Nav />
+    
+    <hr class="space-0">
+
+    <!-- Titulo Bienvenida Sigea 2.0 -->
+    <div class="title-welcome">
+      <h2>Conoce tu Progeso <br> Estudiantil</h2>
+      <h3>
+        Sigea 2.0 es el nuevo sistema de notas para los estudiantes del Instituto
+        Universitario Jesús Obrero, <br /> Sede Catia Basandonos en el antiguo sistema,
+        esta vez, mejorado, estético y a tu mano.
+      </h3>
+
+      <!-- Boton de ingreso al Login -->
+      <Button />
+    </div>
+
+    <hr class="space-1">
+
+    <div class="developer-title">
+      <h2>Desarrolladores</h2>
+    </div>
+
+    <hr>
+
+    <div class="developer">
+      <h3>María Fernanda</h3>
+    </div>
+
+  </main>
+</Layout>
+
+<style>
+  main{
+    background-image: url(../img/b25f2d5b-8c62-425b-8c5d-f2ff690aade8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .title-welcome{
+    color: white;
+    text-align: center;
+    text-shadow: 1.3px 1.5px rgba(0, 0, 0, 0.316);
+  }
+
+  .title-welcome h2{
+    font-size: 5.5rem;
+    line-height: 85px;
+  }
+
+  .title-welcome h3{
+    font-size: 1.1rem;
+    margin-top: 30px;
+  }
+
+  .space-0{
+    margin-bottom: 245px;
+    color: #1E1E1E;
+  }
+
+  .space-1{
+    margin-top: 304px;
+    color: #1E1E1E;
+  }
+
+  .developer-title{
+    padding: 30px;
+    font-size: 4.8rem;
+    color: white;
+    text-align: center;
+    background-color: #1E1E1E;
+
+  }
+
+  .developer{
+    background-color: #1D327B;
+  }
+</style>
