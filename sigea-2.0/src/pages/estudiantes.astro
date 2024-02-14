@@ -7,7 +7,146 @@ import Nav from "../components/nav-bienvenidos/Nav-bienvenidos-estudiantes.astro
   <main>
     <Nav />
 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <main class="bg-gray-300 p-4 mx-auto max-w-screen-lg mt-32">
+      <div>
+        <form class="flex flex-wrap text-left text-sm">
+          <div class="flex mx-4 my-2">
+              <label for="nombre" class="mr-2">Nombre del Estudiante:</label>
+              <input type="text" id="nombre" name="nombre" class="border border-gray-300 rounded-md px-2 py-1 w-36">
+          </div>
+      
+          <div class="flex mx-4 my-2">
+              <label for="cedula" class="mr-2">C.I del Estudiante:</label>
+              <input type="text" id="cedula" name="cedula" class="border border-gray-300 rounded-md px-2 py-1 w-36">
+          </div>
+      
+          <div class="flex mx-4 my-2">
+              <label for="materia" class="mr-2">Materia:</label>
+              <input type="text" id="materia" name="materia" class="border border-gray-300 rounded-md px-2 py-1 w-36">
+          </div>
+      
+          <div class="flex mx-4 my-2">
+              <label for="seccion" class="mr-2">Sección:</label>
+              <input type="text" id="seccion" name="seccion" class="border border-gray-300 rounded-md px-2 py-1 w-36">
+          </div>
+      
+          <div class="flex mx-4 my-2">
+              <label for="semestre" class="mr-2">Semestre:</label>
+              <input type="text" id="semestre" name="semestre" class="border border-gray-300 rounded-md px-2 py-1 w-36">
+          </div>
+      
+          <div class="mx-4 my-2">
+              <input type="submit" value="Buscar" class="bg-blue-500 text-white px-4 py-2 rounded-md">
+          </div>
+      </form> 
+      </div>
+              <div class="font-bold text-blue-700 text-2xl  text-center pb-4">Nómina Estudiantil</div>
+              <table class="w-full text-sm text-left rtl:text-right text-gray-400 text-black bg-gray-400">
+                <thead class="text-xxs text-gray-700 uppercase border-b border-gray-300">
+                  <tr>
+                    <th scope="col" class="px-4 py-2">
+                      Estudiante
+                    </th>
+                    <th scope="col" class="px-4 py-2">
+                      Cedula
+                    </th>
+                    <th scope="col" class="px-4 py-2">
+                      Materia
+                    </th>
+                    <th scope="col" class="px-4 py-2">
+                      Seccion
+                    </th>
+                    <th scope="col" class="px-4 py-2">
+                      Semestre
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white border-b border-gray-300 text-black">
+                    <th scope="row" class="px-4 py-2 font-medium text-black whitespace-nowrap">
+                      Maria Garcia
+                    </th>
+                    <td class="px-4 py-2">
+                      12345678
+                    </td>
+                    <td class="px-4 py-2">
+                      Programación
+                    </td>
+                    <td class="px-4 py-2">
+                      5
+                    </td>
+                    <td class="px-4 py-2">
+                      5
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-b border-gray-300 text-black">
+                    <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                      Jesús Alfonzo
+                    </th>
+                    <td class="px-4 py-2">
+                      124564321321
+                    </td>
+                    <td class="px-4 py-2">
+                      Estadística
+                    </td>
+                    <td class="px-4 py-2">
+                      12
+                    </td>
+                    <td class="px-4 py-2">
+                      5
+                    </td>
+                  </tr>
+                  <tr class="bg-white bg-white border-b border-gray-300 text-black">
+                    <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                      Pedro
+                    </th>
+                    <td class="px-4 py-2">
+                      123456789
+                    </td>
+                    <td class="px-4 py-2">
+                      Calculo
+                    </td>
+                    <td class="px-4 py-2">
+                      10
+                    </td>
+                    <td class="px-4 py-2">
+                      5
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-b border-gray-300 text-black">
+                    <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                      Juan
+                    </th>
+                    <td class="px-4 py-2">
+                      124564321321
+                    </td>
+                    <td class="px-4 py-2">
+                      Estadística
+                    </td>
+                    <td class="px-4 py-2">
+                      12
+                    </td>
+                    <td class="px-4 py-2">
+                      5
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <button
+          type="submit"
+          class="bg-indigo-500 hover:bg-indigo-600 text-black font-bold py-0.5 px-4 rounded focus:outline-none focus:shadow-outline"
+          style="float: right;">
+          <a href="/creacionestudiantes">Ingresar</a>  
+        </button>
+        </div>
+      </div>
+      </main>
     
+        <!-- Tailwind -->
+      <script src="https://cdn.tailwindcss.com"></script>
 
   </main>
 </Layout>
