@@ -1,0 +1,177 @@
+---
+import Layout from "../layouts/Layout.astro";
+// import Nav from "../components/Nav-login.astro"
+import Navlogin from "../components/navlogin.astro";
+---
+
+<Layout title="Inicio de Sesión | Estudiantes">
+  <main>
+    <Navlogin />
+
+    <!-- component -->
+    <div class="bg-gray-100 flex flex-col justify-center sm:py-12">
+      <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
+        <h1 class="font-bold text-center text-2xl mb-5">
+          <a href="/bienvenidos">Inicio de sesión</a>
+        </h1>
+        <h1 class="font-bold text-center text-5xl mb-5 text-indigo-600">
+          Estudiantes
+        </h1>
+        <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
+          <div class="px-5 py-7">
+            <label class="font-semibold text-sm text-gray-600 pb-1 block"
+              >Correo Electronico</label
+            >
+            <input
+              type="text"
+              class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+            />
+            <label class="font-semibold text-sm text-gray-600 pb-1 block"
+              >Contraseña</label
+            >
+            <input
+              type="text"
+              class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+            />
+            <button
+              type="button"
+              class="transition duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-blue-700 focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block"
+            >
+              <span class="inline-block mr-2"
+                ><a href="/bienvenidos">Iniciar Sesión</a></span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-4 h-4 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="p-5">
+            <div class="grid grid-cols-3 gap-1">
+              <!-- <button type="button" class="transition duration-200 border border-gray-200 text-gray-500 w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-normal text-center inline-block">MailUp</button> -->
+              <button
+                type="button"
+                class="transition duration-200 border border-gray-200 text-indigo-600 w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-normal text-center inline-block"
+                ><a href="/loginestudiante">Estudiante</a></button
+              >
+              <button
+                type="button"
+                class="transition duration-200 border border-gray-200 text-gray-500 w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-normal text-center inline-block"
+                ><a href="/loginprofesor">Profesor</a></button
+              >
+            </div>
+          </div>
+          <div class="py-2">
+            <div class="grid grid-cols-2 gap-1">
+              <div class="text-center sm:text-left whitespace-nowrap">
+                <button
+                  class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset"
+                >
+                  <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="w-4 h-4 inline-block align-text-top"
+                  > -->
+                  <!-- <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
+                    ></path> -->
+                  <!-- </svg> -->
+                  <!-- <span class="inline-block ml-1"><a href="/register">¿No estás registrado?</a></span> -->
+                  <!-- </button> -->
+                  <!-- </div> -->
+                  <!-- <div class="text-center sm:text-right whitespace-nowrap"> -->
+                  <!-- <button -->
+                  <!-- class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset" -->
+                  <!-- > -->
+                  <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="w-4 h-4 inline-block align-text-bottom"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                    ></path>
+                  </svg>
+                  <span class="inline-block ml-1">Ayuda</span>
+                </button> -->
+                  <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- </div> -->
+                  <div class="py-1">
+                    <div class="grid grid-cols-2 gap-1">
+                      <div class="text-center whitespace-nowrap">
+                        <button
+                          class="transition duration-200 mx-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-200 focus:outline-none focus:bg-gray-300 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            class="w-4 h-4 inline-block align-text-top"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                          </svg>
+                          <span class="inline-block ml-1"
+                            ><a href="http://localhost:4321/"
+                              >Volver a la página Principal</a
+                            ></span
+                          >
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <style></style>
+
+            <div class="astro"></div>
+          </div>
+
+          <style>
+            main {
+              background-image: url(../img/blur-iujo2.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;
+            }
+            .container {
+              background-color: white;
+              width: 300px;
+              margin: 0 auto; /* Centra horizontalmente */
+              padding: 20px;
+              border-radius: 10px;
+              margin-top: 300px; /* Ajusta la distancia desde la parte superior */
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

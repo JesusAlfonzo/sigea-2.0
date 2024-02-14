@@ -1,93 +1,92 @@
 ---
 import Layout from "../layouts/Layout.astro";
 // import Header from "../components/Header.astro"
-import Nav from "../components/Nav.astro"
-import Button from "../components/Button.astro"
+import Nav from "../components/Nav.astro";
+import Buttone from "../components/Buttonestudiante.astro";
+import Buttonp from "../components/Buttonprofesor.astro";
 ---
 
 <Layout title="Sigea 2.0">
-  <main> 
-
+  <main>
     <!-- Header Titulo Sigea 2.0 -->
     <!-- <Header/> -->
 
     <!-- Barra de Navegación -->
     <Nav />
-    
-    <hr class="space-0">
+
+    <hr class="space-0" />
 
     <!-- Titulo Bienvenida Sigea 2.0 -->
     <div class="title-welcome">
-      <h2>Conoce tu Progeso <br> Estudiantil</h2>
+      <h2>Conoce tu Progeso <br /> Estudiantil</h2>
       <h3>
-        Sigea 2.0 es el nuevo sistema de notas para los estudiantes del Instituto
-        Universitario Jesús Obrero, <br /> Sede Catia Basandonos en el antiguo sistema,
-        esta vez, mejorado, estético y a tu mano.
+        Sigea 2.0 es el nuevo sistema de notas para los estudiantes del
+        Instituto Universitario Jesús Obrero, <br /> Sede Catia Basandonos en el
+        antiguo sistema, esta vez, mejorado, estético y a tu mano.
       </h3>
 
       <!-- Boton de ingreso al Login -->
-      <Button />
+      <Buttone />
+      <Buttonp />
     </div>
 
-    <hr class="space-1">
+    <hr class="space-1" />
 
-    <div class="developer-title">
+    <div class="developertitle">
       <h2>Desarrolladores</h2>
     </div>
 
-    <hr>
+    <hr />
 
     <div class="developer">
       <h3>María Fernanda</h3>
     </div>
-
   </main>
 </Layout>
 
 <style>
-  main{
+  main {
     background-image: url(../img/b25f2d5b-8c62-425b-8c5d-f2ff690aade8.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
 
-  .title-welcome{
+  .title-welcome {
     color: white;
     text-align: center;
     text-shadow: 1.3px 1.5px rgba(0, 0, 0, 0.316);
   }
 
-  .title-welcome h2{
+  .title-welcome h2 {
     font-size: 5.5rem;
     line-height: 85px;
   }
 
-  .title-welcome h3{
+  .title-welcome h3 {
     font-size: 1.1rem;
     margin-top: 30px;
   }
 
-  .space-0{
+  .space-0 {
     margin-bottom: 245px;
-    color: #1E1E1E;
+    color: #1e1e1e;
   }
 
-  .space-1{
+  .space-1 {
     margin-top: 304px;
-    color: #1E1E1E;
+    color: #1e1e1e;
   }
 
-  .developer-title{
+  .developertitle {
     padding: 30px;
     font-size: 4.8rem;
     color: white;
     text-align: center;
-    background-color: #1E1E1E;
-
+    background-color: #1e1e1e;
   }
 
-  .developer{
-    background-color: #1D327B;
+  .developer {
+    background-color: #1d327b;
   }
 </style>
