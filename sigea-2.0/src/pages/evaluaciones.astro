@@ -6,5 +6,158 @@ import Nav from "../components/nav-bienvenidos/Nav-bienvenidos-evaluaciones.astr
 <Layout title="Sigea 2.0 | Evaluaciones">
   <main>
     <Nav />
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <main class="flex">
+      <div class="w-2/3 mx-auto mt-12 mr-2 overflow-y-auto max-h-screen p-4">
+        <div class="font-bold text-xl text-blue-700">
+          <h2>NOTAS DE LOS ESTUDIANTES</h2>
+        </div>
+        <div class="bg-gray-300">
+          <div class="mx-4 sm:mx-auto py-4 px-2 sm:px-4 lg:px-6">
+            <div class="w-80 p-2">
+              <label for="carrera" class="block text-sm font-medium text-gray-700">Materia:</label> 
+              <select id="carrera" name="carrera" class="mt-1 block w-full pl-2 pr-8 py-1 text-sm border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md">
+                <option value="informatica">Calculo</option>
+                <option value="administracion">Programación</option>
+                <option value="contaduria">Ing. Software</option>
+                <option value="educacion">Inglés</option>
+              </select>
+            </div>
+            <div class="w-80 p-2">
+              <label for="sesion" class="block text-sm font-medium text-gray-700">Sección:</label> 
+              <select id="sesion" name="sesion" class="mt-1 block w-full pl-2 pr-8 py-1 text-sm border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md">
+                <option value="a">Sección A</option>
+                <option value="b">Sección B</option>
+                <option value="c">Sección C</option>
+              </select>
+            </div>
+            <div class="w-80 p-2">
+              <label for="sesion" class="block text-sm font-medium text-gray-700">Evaluación:</label>
+              <select id="sesion" name="sesion" class="mt-1 block w-full pl-2 pr-8 py-1 text-sm border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md">
+                <option value="a">Examen</option>
+                <option value="b">Exposición</option>
+                <option value="c">Mapas-Mental</option>
+              </select>
+            </div>
+            <div>
+              <div class="font-semibold text-blue-700 text-lg">Nómina de Notas</div>
+              <table class="w-full text-sm text-left rtl:text-right text-gray-400 text-black bg-gray-400">
+                <thead class="text-xxs text-gray-700 uppercase border-b border-gray-300">
+                  <tr>
+                    <th scope="col" class="px-4 py-2">
+                      Estudiante
+                    </th>
+                    <th scope="col" class="px-4 py-2">
+                      Cedula
+                    </th>
+                    <th scope="col" class="px-4 py-2">
+                      Materia
+                    </th>
+                    <th scope="col" class="px-4 py-2">
+                      Nota
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white border-b border-gray-300 text-black">
+                    <th scope="row" class="px-4 py-2 font-medium text-black whitespace-nowrap">
+                      Maria Garcia
+                    </th>
+                    <td class="px-4 py-2">
+                      12345678
+                    </td>
+                    <td class="px-4 py-2">
+                      Programación
+                    </td>
+                    <td class="px-4 py-2">
+                      5
+                    </td>
+                  </tr>
+                  <tr class="bg-gray-400 border-b border-gray-300 text-black">
+                    <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                      Jesús
+                    </th>
+                    <td class="px-4 py-2">
+                      124564321321
+                    </td>
+                    <td class="px-4 py-2">
+                      Estadística
+                    </td>
+                    <td class="px-4 py-2">
+                      12
+                    </td>
+                  </tr>
+                  <tr class="bg-white bg-gray-800 border-b border-gray-300 text-black">
+                    <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                      adasdads
+                    </th>
+                    <td class="px-4 py-2">
+                      fdasdfa
+                    </td>
+                    <td class="px-4 py-2">
+                      sadfsfd
+                    </td>
+                    <td class="px-4 py-2">
+                      sfdsfdsf
+                    </td>
+                  </tr>
+                  <tr class="bg-gray-400 border-b border-gray-300 text-black">
+                    <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                      gsdfgfdg
+                    </th>
+                    <td class="px-4 py-2">
+                      124564321321
+                    </td>
+                    <td class="px-4 py-2">
+                      Estadística
+                    </td>
+                    <td class="px-4 py-2">
+                      12
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- tabla de creacion de evaluaciones -->
+      <div class="w-1/3 mx-auto mt-12 pr-4">
+        <div class="font-bold text-2xl text-blue-700"> 
+          <h2>Creación de Evaluaciones</h2>
+        </div>
+        <div class="bg-gray-300 mt-4">
+          <div class="mx-4 sm:mx-auto py-6 px-4 sm:px-8 lg:px-10"> 
+            <div class="w-full p-2 flex flex-col"> 
+              <label for="titulo" class="block text-xs font-medium text-gray-700">Título:</label>
+              <input type="text" id="titulo" name="titulo" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+            </div>
+            <div class="w-full p-2 flex flex-col"> 
+              <label for="semestre" class="block text-xs font-medium text-gray-700">Semestre:</label>
+              <input type="text" id="semestre" name="semestre" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+            </div>
+            <div class="w-full p-2 flex flex-col"> 
+              <label for="materia" class="block text-xs font-medium text-gray-700">Materia:</label> 
+              <input type="text" id="materia" name="materia" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+            </div>
+            <div class="w-full p-2 flex flex-col"> 
+              <label for="materia" class="block text-xs font-medium text-gray-700">Sección:</label> 
+              <input type="text" id="materia" name="materia" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+            </div>
+          </div>
+          <div class="flex justify-center mt-2 pb-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-lg text-base">Crear</button>
+            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded-lg ml-2 text-base">Eliminar</button> 
+          </div>
+        </div>
+      </div>
+    </main>
+    
+        <!-- Tailwind -->
+      <script src="https://cdn.tailwindcss.com"></script>
+    
+    </body>
   </main>
 </Layout>

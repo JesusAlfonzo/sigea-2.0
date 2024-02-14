@@ -1,46 +1,161 @@
 ---
 import Layout from "../layouts/Layout.astro";
 // import Header from "../components/Header.astro"
-<<<<<<< HEAD
 import Nav from "../components/nav-bienvenidos/Nav-bienvenidos.astro";
----
-
-<Layout title="Sigea 2.0 | Bienvenidos">
-  <main>
-    <Nav />
-  </main>
-=======
-import Nav from "../components/Nav-bienvenidos.astro"
 ---
 
 <Layout title="bienvenidos">
 <main>
     <Nav/>
 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="text-center text-4xl font-bold p-20">Bienvenidos a <span class="text-blue-700">Sigea 2.0</span> </h1>
 
-<!-- Titulo Bienvenida Sigea 2.0 -->
-<div class="title-welcome">
-    <h2>Bienvenidos a Sigea 2.0</h2>
+<!-- tabla de estado de los estudiantes -->
+<div class="w-3/4 mx-auto">
+    <div class="font-bold text-xl text-blue-700">
+        <h2>Estado de los estudiantes</h2>
+        </div>
+    <div class="bg-gray-300 mx-26">
+      <div class="mx-4 sm:mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="w-64 p-4">
+          <label for="carrera" class="block text-sm font-medium text-gray-700">Materia:</label>
+          <select id="carrera" name="carrera" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+            <option value="informatica">Calculo</option>
+            <option value="administracion">Programación</option>
+            <option value="contaduria">ing. software</option>
+            <option value="educacion">Ingles</option>
+          </select>
+        </div>
+        <div class="w-64 p-4">
+          <label for="sesion" class="block text-sm font-medium text-gray-700">Sección:</label>
+          <select id="sesion" name="sesion" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+            <option value="a">Sección A</option>
+            <option value="b">Sección B</option>
+            <option value="c">Sección C</option>
+          </select>
+        </div>
+        <div>
+          <table class="w-full text-sm text-left rtl:text-right text-gray-400 text-black bg-gray-400">
+            <thead class="text-xs text-gray-700 uppercase border-b border-gray-300">
+              <tr>
+                <th scope="col" class="px-6 py-3">
+                  Estudiante
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Cedula
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Materia
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Evaluaciones realizadas
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Nota ref.
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  % Evaluado
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b border-gray-300 text-black">
+                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap">
+                  Maria Garcia
+                </th>
+                <td class="px-6 py-4">
+                  12345678
+                </td>
+                <td class="px-6 py-4">
+                  Programación
+                </td>
+                <td class="px-6 py-4">
+                  5
+                </td>
+                <td class="px-6 py-4">
+                  12
+                </td>
+                <td class="px-6 py-4">
+                  40%
+                </td>
+              </tr>
+              <tr class="bg-gray-400 border-b border-gray-300 text-black">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                  Jesús
+                </th>
+                <td class="px-6 py-4">
+                  124564321321
+                </td>
+                <td class="px-6 py-4">
+                  Estadística
+                </td>
+                <td class="px-6 py-4">
+                  12
+                </td>
+                <td class="px-6 py-4">
+                  12
+                </td>
+                <td class="px-6 py-4">
+                  40%
+                </td>
+              </tr>
+              <tr class="bg-white bg-gray-800 border-b border-gray-300 text-black">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                  adasdads
+                </th>
+                <td class="px-6 py-4">
+                  fdasdfa
+                </td>
+                <td class="px-6 py-4">
+                  sadfsfd
+                </td>
+                <td class="px-6 py-4">
+                  sfdsfdsf
+                </td>
+                <td class="px-6 py-4">
+                  sfdsfdsf
+                </td>
+                <td class="px-6 py-4">
+                  sfdsfdsf
+                </td>
+              </tr>
+              <tr class="bg-gray-400 border-b border-gray-300 text-black">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                  gsdfgfdg
+                </th>
+                <td class="px-6 py-4">
+                  124564321321
+                </td>
+                <td class="px-6 py-4">
+                  Estadística
+                </td>
+                <td class="px-6 py-4">
+                  12
+                </td>
+                <td class="px-6 py-4">
+                  15+65
+                </td>
+                <td class="px-6 py-4">
+                  80%
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
-<style>
-  main{
-  background-color: white;
-  }
-  .title-welcome{
-    color: blacks;
-    text-align: center;
-    text-shadow: 1.3px 1.5px rgba(0, 0, 0, 0.316);
-  }
-  .title-welcome h2{
-    font-size: 5.5rem;
+    <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  }
+</body>
+</html>
 
-</style>
-
-
->>>>>>> de9bd0d7d6299154878f14944e04174839e5f05b
 </Layout>
 
 <style>
