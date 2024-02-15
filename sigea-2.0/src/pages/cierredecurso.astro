@@ -6,5 +6,44 @@ import Nav from "../components/nav-bienvenidos/Nav-bienvenidos-cierredecurso.ast
 <Layout title="Sigea 2.0 | Cierre de Curso">
   <main>
     <Nav />
-  </main>
+
+ <!-- cierre de curso -->
+ <div class="flex">
+  <div class="w-1/3 mx-auto mt-12 pr-4">
+    <div class="bg-gray-300 mt-4">
+
+        <div class="w-full p-2 flex flex-col"> 
+          <label for="titulo" class="block text-xs font-medium text-gray-700">Materia:</label>
+          <input type="text" id="titulo" name="titulo" placeholder="Seleccione la materia" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg placeholder-gray-500 text-gray-700 pl-5"> 
+        </div>
+        <div class="w-full p-2 flex flex-col"> 
+          <label for="semestre" class="block text-xs font-medium text-gray-700">Sección:</label>
+          <input type="text" id="semestre" name="semestre" placeholder="Seleccione la sección" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg placeholder-gray-500 text-gray-700 pl-5"> 
+        </div>
+        <div class="font-bold text-center text-2xl text-red-600">
+        <h2>Cierre de Curso</h2>
+        </div>
+        <div class="font-bold text-center text-1xl text-black-600">
+        <h3>Si ha finalizado el curso, pulsar el botón</h3>
+        </div>
+        <div class="w-full p-2 flex flex-col"> 
+      </div>
+      <div class="flex justify-center mt-2 pb-4">
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded-lg text-base">Cerrar</button>
+      </div>
+    </div>
+  </div>
+      <!-- Que es cierre de curso -->
+  <div class="w-1/2 mx-auto mt-12 pr-4">
+    <div class="bg-gray-300 mt-4">
+      <div class="mx-2 sm:mx-auto py-6 px-2 sm:px-4 lg:px-10"> 
+        <div class="w-full p-2 flex flex-col"> 
+          <div class="font-bold text-center text-2xl text-blue-600">
+            <h2>¿Que es Cierre de Curso?</h2><br>
+            </div>
+            <h3>El "cierre de curso" para una materia de la universidad, se refiere al final del periodo academico en el que se imparten las clases y se realizan los examenes. Este cierre puede incluir la finalizacion de las clases, la toma de examenes y la calificacion final de los estudiantes."</h3><br>
+            <div class="font-bold text-center text-1xl text-red-600">
+              <h3>Tome con precaucion esta decision</h3>
+              </div> 
+</main>
 </Layout>
