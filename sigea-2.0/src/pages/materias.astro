@@ -7,49 +7,55 @@ import Nav from "../components/nav-bienvenidos/Nav-bienvenidos-materias.astro";
   <main>
     <Nav />
       <!-- tabla de creacion de materias -->
-    <div class="flex">
-      <div class="w-1/3 mx-auto mt-12 pr-4">
-        <div class="font-bold text-2xl text-blue-700"> 
-          <h2>Creación de Materias</h2>
-        </div>
-        <div class="bg-gray-300 mt-4">
-          <div class="mx-4 sm:mx-auto py-6 px-4 sm:px-8 lg:px-10"> 
-            <div class="w-full p-2 flex flex-col"> 
-              <label for="titulo" class="block text-xs font-medium text-gray-700">Materia:</label>
-              <input type="text" id="titulo" name="titulo" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+      <div class="flex">
+        <!-- Primer cuadro -->
+        <div class="w-1/2 mx-auto mt-12 pr-4">
+          <div class="font-bold text-2xl text-blue-700"> 
+            <h2>Creación de Materias</h2>
+          </div>
+          <div class="bg-gray-300 mt-4">
+            <div class="mx-4 sm:mx-auto py-6 px-4 sm:px-8 lg:px-10"> 
+              <div class="w-full p-2 flex flex-col"> 
+                <label for="titulo" class="block text-xs font-medium text-gray-700">Materia:</label>
+                <input type="text" id="titulo" name="titulo" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+              </div>
+              <div class="w-full p-2 flex flex-col"> 
+                <label for="semestre" class="block text-xs font-medium text-gray-700">Sección:</label>
+                <input type="text" id="semestre" name="semestre" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+              </div>
+              <div class="w-full p-2 flex flex-col"> 
+                <label for="materia" class="block text-xs font-medium text-gray-700">Semestre:</label> 
+                <input type="text" id="materia" name="materia" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+              </div>
             </div>
-            <div class="w-full p-2 flex flex-col"> 
-              <label for="semestre" class="block text-xs font-medium text-gray-700">Sección:</label>
-              <input type="text" id="semestre" name="semestre" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
-            </div>
-            <div class="w-full p-2 flex flex-col"> 
-              <label for="materia" class="block text-xs font-medium text-gray-700">Semestre:</label> 
-              <input type="text" id="materia" name="materia" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"> 
+            <div class="flex justify-center mt-2 pb-4">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-lg text-base">Crear Materia</button>
             </div>
           </div>
-          <div class="flex justify-center mt-2 pb-4">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-lg text-base">Crear Materia</button>
+        </div>
+        <!-- Segundo cuadro -->
+        <div class="w-1/2 mx-auto mt-12 pr-4">
+          <div class="font-bold text-2xl text-blue-700"> 
+            <h2>Materias creadas</h2>
+          </div>
+          <div class="bg-gray-300 mt-4">
+            <div class="mx-4 sm:mx-auto py-6 px-4 sm:px-8 lg:px-10"> 
+              <div class="w-full p-2 flex flex-col"> 
+                <label for="titulo" class="block text-xs font-medium text-gray-700"></label>
+                <input type="text" id="Calculo" name="Calculo" placeholder="Calculo" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg placeholder-gray-500 text-gray-700 pl-5"> 
+              </div>
+              <div class="w-full p-2 flex flex-col"> 
+                <label for="semestre" class="block text-xs font-medium text-gray-700"></label>
+                <input type="text" id="Estadistica" name="Estadistica" placeholder="Estadística" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg placeholder-gray-500 text-gray-700 pl-5"> 
+              </div>
+            </div>
+            <div class="flex justify-center mt-2 pb-4">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-lg text-base">Editar</button>
+              <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded-lg ml-2 text-base">Eliminar</button> 
+            </div>
           </div>
         </div>
       </div>
-          <!-- tabla materias creadas -->
-      <div class="w-1/2 mx-auto mt-12 pr-4">
-        <div class="font-bold text-2xl text-blue-700"> 
-          <h2>Materias creadas</h2>
-        </div>
-        <div class="bg-gray-300 mt-4">
-          <div class="mx-4 sm:mx-auto py-6 px-4 sm:px-8 lg:px-10"> 
-            <div class="w-full p-2 flex flex-col"> 
-              <label for="titulo" class="block text-xs font-medium text-gray-700"></label>
-              <input type="text" id="Calculo" name="Calculo" placeholder="Calculo" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg placeholder-gray-500 text-gray-700 pl-5"> 
-            </div>
-            <div class="w-full p-2 flex flex-col"> 
-              <label for="semestre" class="block text-xs font-medium text-gray-700"></label>
-              <input type="text" id="Estadistica" name="Estadistica" placeholder="Estadística" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg placeholder-gray-500 text-gray-700 pl-5"> 
-            </div>
-          <div class="flex justify-center mt-2 pb-4">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-lg text-base">Editar</button>
-            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded-lg ml-2 text-base">Eliminar</button> 
-          </div>
+      
   </main>
 </Layout>
