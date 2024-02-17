@@ -1,0 +1,146 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav-Sistema-Sigea/Nav-Sistema-Estudiantes.astro";
+---
+
+<Layout title="Sigea 2.0 | Estudiantes">
+  <main>
+    <Nav />
+  </main>
+    <main class="bg-gray-300 p-4 mx-auto max-w-screen-lg mt-32">
+      <div>
+        <form class="flex flex-wrap text-left text-sm">
+          <div class="flex mx-4 my-2">
+            <label for="nombre" class="mr-2">Nombre del Estudiante:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="border border-gray-300 rounded-md px-2 py-1 w-36"
+            />
+          </div>
+
+          <div class="flex mx-4 my-2">
+            <label for="cedula" class="mr-2">C.I del Estudiante:</label>
+            <input
+              type="text"
+              id="cedula"
+              name="cedula"
+              class="border border-gray-300 rounded-md px-2 py-1 w-36"
+            />
+          </div>
+
+          <div class="flex mx-4 my-2">
+            <label for="materia" class="mr-2">Materia:</label>
+            <input
+              type="text"
+              id="materia"
+              name="materia"
+              class="border border-gray-300 rounded-md px-2 py-1 w-36"
+            />
+          </div>
+
+          <div class="flex mx-4 my-2">
+            <label for="seccion" class="mr-2">Sección:</label>
+            <input
+              type="text"
+              id="seccion"
+              name="seccion"
+              class="border border-gray-300 rounded-md px-2 py-1 w-36"
+            />
+          </div>
+
+          <div class="flex mx-4 my-2">
+            <label for="semestre" class="mr-2">Semestre:</label>
+            <input
+              type="text"
+              id="semestre"
+              name="semestre"
+              class="border border-gray-300 rounded-md px-2 py-1 w-36"
+            />
+          </div>
+
+          <div class="mx-4 my-2">
+            <input
+              type="submit"
+              value="Buscar"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="font-bold text-blue-700 text-2xl text-center pb-4 py-6">
+        Nómina Estudiantil
+      </div>
+      <div>
+        <div class="relative overflow-x-auto">
+          <table class="w-full text-sm text-left rtl:text-right text-black">
+            <thead class="text-xs text-white uppercase dark:bg-gray-800">
+              <tr>
+                <th scope="col" class="px-6 py-3"> Estudiante</th>
+                <th scope="col" class="px-6 py-3"> Cedula</th>
+                <th scope="col" class="px-6 py-3"> Materia</th>
+                <th scope="col" class="px-6 py-3"> Evalu. Realizadas</th>
+                <th scope="col" class="px-6 py-3"> Nota Ref.</th>
+                <th scope="col" class="px-6 py-3"> % Evaluado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium whitespace-nowrap text-black"
+                >
+                  María Fernanda
+                </th>
+                <td class="px-6 py-4"> 123456789</td>
+                <td class="px-6 py-4"> Cálculo 1</td>
+                <td class="px-6 py-4"> 4</td>
+                <td class="px-6 py-4"> 20/20</td>
+                <td class="px-6 py-4"> 100%</td>
+              </tr>
+              <tr class="bg-white border-b">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium whitespace-nowrap text-black"
+                >
+                  Jesus Alfonzo
+                </th>
+                <td class="px-6 py-4"> 123456789</td>
+                <td class="px-6 py-4"> Programación</td>
+                <td class="px-6 py-4"> 4</td>
+                <td class="px-6 py-4"> 20/20</td>
+                <td class="px-6 py-4"> 100%</td>
+              </tr>
+              <tr class="bg-white">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium whitespace-nowrap text-black"
+                >
+                  Pedro Pérez
+                </th>
+                <td class="px-6 py-4"> 123456789</td>
+                <td class="px-6 py-4"> Estadistica</td>
+                <td class="px-6 py-4"> 4</td>
+                <td class="px-6 py-4"> 20/20</td>
+                <td class="px-6 py-4"> 100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </main>
+  </main>
+</Layout>
+
+<div class="flex justify-center mt-2 pb-4">
+  <button
+    type="submit"
+    class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-0.5 px-4 rounded focus:outline-none focus:shadow-outline"
+    style="float: right;"
+  >
+    <a href="../../Sistema-Sigea-2.0/SigeaCreacionEstudiantes">Ingresar</a>
+  </button>
+</div>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>

@@ -1,0 +1,154 @@
+---
+
+---
+
+<div class="contTabla" id="dTabla">
+  <div class="botUp"></div>
+  <table class="tabla">
+    <thead class="head">
+      <th>Campo 1</th>
+      <th>Campo 2</th>
+      <th>Campo 3</th>
+      <th>Campo 4</th>
+      <th>Campo 5</th>
+      <th>Campo 6</th>
+      <th>Campo 7</th>
+      <th>Campo 8</th>
+    </thead>
+    <tbody class="body">
+      <tr>
+        <td>Campo con los datos de mostrar 1</td>
+        <td>Campo con los datos de mostrar 2</td>
+        <td>Campo con los datos de mostrar 3</td>
+        <td>Campo con los datos de mostrar 4</td>
+        <td>Campo con los datos de mostrar 5</td>
+        <td>Campo con los datos de mostrar 6</td>
+        <td>Campo con los datos de mostrar 7</td>
+        <td>Campo con los datos de mostrar 8</td>
+      </tr>
+      <tr>
+        <td>Campo con los datos 1 en fila 2</td>
+        <td>Campo con los datos 2 en fila 2</td>
+        <td>Campo con los datos 3 en fila 2</td>
+        <td>Campo con los datos 4 en fila 2</td>
+        <td>Campo con los datos 5 en fila 2</td>
+        <td>Campo con los datos 6 en fila 2</td>
+        <td>Campo con los datos 7 en fila 2</td>
+        <td>Campo con los datos 8 en fila 2</td>
+      </tr>
+      <tr>
+        <td>Campo con los datos 1 en fila 3</td>
+        <td>Campo con los datos 2 en fila 3</td>
+        <td>Campo con los datos 3 en fila 3</td>
+        <td>Campo con los datos 4 en fila 3</td>
+        <td>Campo con los datos 5 en fila 3</td>
+        <td>Campo con los datos 6 en fila 3</td>
+        <td>Campo con los datos 7 en fila 3</td>
+        <td>Campo con los datos 8 en fila 3</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="botDn"></div>
+</div>
+
+<style>
+  .tabla :is(.body td, .head th) {
+    padding: 8px 4px;
+  }
+  .tabla thead th {
+    background: lightgrey;
+    color: white;
+  }
+  .tabla tbody td {
+    background: #d3d3d373;
+    color: #474444;
+  }
+  .contTabla .navTabla {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    .contTabla .botUp,
+    .contTabla .botDn {
+      display: block;
+      height: 0;
+      width: 0;
+      margin: 0 auto;
+      border: 20px solid transparent;
+      border-top: 0;
+      border-bottom: 0;
+      pointer-events: all;
+    }
+    .contTabla .botUp {
+      border-bottom: 20px solid black;
+    }
+    .contTabla .botDn {
+      border-top: 20px solid black;
+    }
+    .contTabla .tabla {
+      display: flex;
+      gap: 2px;
+      justify-content: space-between;
+      overflow: hidden;
+      background: #f9f2fc;
+    }
+    .contTabla .tabla .head {
+      display: block;
+      flex: 1 0;
+      height: fit-content;
+    }
+    .contTabla .tabla .body {
+      flex: 2 0 auto;
+      overflow-y: hidden;
+      scroll-snap-type: y mandatory;
+    }
+    .contTabla .tabla .head tr {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2px;
+      flex: 1 0 100%;
+    }
+    .contTabla .tabla .body tr {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2px;
+      flex: 1 0 100%;
+      scroll-snap-align: start;
+    }
+    .contTabla .tabla .body tr:nth-child(odd) {
+      background: #f4fff5;
+    }
+    .contTabla .tabla :is(th, td) {
+      display: block;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    /*Coloca el alto de la tabla al del thead  para anchos menores a la tabla*/
+    /*Se trata de trasponer filas y columnas, dejando fija la cabecera, a modo de sidebar */
+    function setTabla(idTabla) {
+      let sel = "#" + idTabla;
+      let tabla = document.querySelector(sel + " table");
+      //Poner alto del bloque al alto de head de la tabla ya traspuesta
+      if (window.getComputedStyle(tabla).display != "table") {
+        let hd = document.querySelector(sel + " thead");
+        let alto = window.getComputedStyle(hd).height;
+        let body = document.querySelector(sel + " tbody");
+        tabla.style.height = alto;
+        let bot = document.querySelector(sel + " .botUp");
+        bot.addEventListener("click", () =>
+          window.tBody.scrollBy({ left: 0, top: -1, behavior: "smooth" })
+        );
+        bot = document.querySelector(sel + " .botDn");
+        bot.addEventListener("click", () =>
+          window.tBody.scrollBy({ left: 0, top: 1, behavior: "smooth" })
+        );
+        body.scrollTo(0, 0);
+        body.cdr = 0;
+        window.tBody = body;
+      }
+    }
+    setTabla("dTabla");
+  })();
+</script>

@@ -1,0 +1,86 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav-Sistema-Sigea/Nav-Sistema-Estudiantes.astro";
+---
+
+<Layout title="Sigea 2.0 | Estudiantes">
+  <main>
+    <Nav />
+
+    <!-- tabla de creacion de estudiantes -->
+    <div class="w-1/3 mx-auto mt-12 pr-4">
+      <div class="font-bold text-2xl text-blue-700">
+        <h2>Creación de Estudiantes</h2>
+      </div>
+      <div class="bg-gray-300 mt-4">
+        <div class="mx-4 sm:mx-auto py-6 px-4 sm:px-8 lg:px-10">
+          <div class="w-full p-2 flex flex-col">
+            <label for="titulo" class="block text-xs font-medium text-gray-700"
+              >Nombre y apellido:</label
+            >
+            <input
+              type="text"
+              id="titulo"
+              name="titulo"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"
+            />
+          </div>
+          <div class="w-full p-2 flex flex-col">
+            <label
+              for="semestre"
+              class="block text-xs font-medium text-gray-700">Cedula:</label
+            >
+            <input
+              type="text"
+              id="semestre"
+              name="semestre"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"
+            />
+          </div>
+          <div class="w-full p-2 flex flex-col">
+            <label for="materia" class="block text-xs font-medium text-gray-700"
+              >Semestre:</label
+            >
+            <input
+              type="text"
+              id="materia"
+              name="materia"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"
+            />
+          </div>
+          <div class="w-full p-2 flex flex-col">
+            <label for="materia" class="block text-xs font-medium text-gray-700"
+              >Sección:</label
+            >
+            <input
+              type="text"
+              id="materia"
+              name="materia"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"
+            />
+          </div>
+          <div class="w-full p-2 flex flex-col">
+            <label for="materia" class="block text-xs font-medium text-gray-700"
+              >Materia a cursar:</label
+            >
+            <input
+              type="text"
+              id="materia"
+              name="materia"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg"
+            />
+          </div>
+        </div>
+        <div class="flex justify-center mt-2 pb-4">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-lg text-base"
+            >Crear Estudiante</button
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </main>
+</Layout>

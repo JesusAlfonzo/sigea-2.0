@@ -1,16 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-// import Header from "../components/Header.astro"
-import Nav from "../components/Nav.astro";
-import Buttone from "../components/Buttonestudiante.astro";
-import Buttonp from "../components/Buttonprofesor.astro";
+import Nav from "../components/Pagina-Principal/NavMain.astro";
+import BotonEstudiantes from "../components/Pagina-Principal/BotonEstudiantes.astro";
+import BotonProfesores from "../components/Pagina-Principal/BotonProfesores.astro";
 ---
 
 <Layout title="Sigea 2.0">
   <main>
-    <!-- Header Titulo Sigea 2.0 -->
-    <!-- <Header/> -->
-
     <!-- Barra de Navegación -->
     <Nav />
 
@@ -26,13 +22,13 @@ import Buttonp from "../components/Buttonprofesor.astro";
       </h3>
 
       <!-- Boton de ingreso al Login -->
-      <Buttone />
-      <Buttonp />
+      <BotonEstudiantes />
+      <BotonProfesores />
     </div>
 
     <hr class="space-1" />
 
-    <div class="developertitle">
+    <!-- <div class="developertitle">
       <h2>Desarrolladores</h2>
     </div>
 
@@ -40,7 +36,7 @@ import Buttonp from "../components/Buttonprofesor.astro";
 
     <div class="developer">
       <h3>María Fernanda</h3>
-    </div>
+    </div> -->
   </main>
 </Layout>
 
@@ -74,7 +70,7 @@ import Buttonp from "../components/Buttonprofesor.astro";
   }
 
   .space-1 {
-    margin-top: 304px;
+    margin-top: 271px;
     color: #1e1e1e;
   }
 
